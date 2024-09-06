@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main() {
+
+int planeSpeed;
+int planeHeightFlight;
+int planeEchelon;
+
+std::cout << "--------Запустим самолет!--------\n";
+  std::cout << "\n";
+  std::cout << "Введите скорость самолета: ";
+  std::cin >> planeSpeed;
+  std::cout << "Введите высоту полета самолета: ";
+  std::cin >> planeHeightFlight;
+  std::cout << "Введите эшелон самолета: ";
+  std::cin >> planeEchelon;
+
+  if (planeSpeed >= 750 && planeSpeed <= 850 && planeHeightFlight >= 9000 && planeHeightFlight <= 9500 && planeEchelon >= 2000 && planeEchelon <= 2300)
+    std::cout << "Самолет готов к полету!";
+  else if (planeSpeed <= 749 || planeSpeed >= 851 || planeHeightFlight <= 8999 || planeHeightFlight >= 9501 || planeEchelon <= 1999 || planeEchelon >= 2301)
+  std::cout << "\n";
+    std::cout << "-------Самолет не полетит((-------";
+}
