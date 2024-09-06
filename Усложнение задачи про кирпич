@@ -1,0 +1,34 @@
+#include <iostream> 
+
+int main() {
+  int firstBoxWidth;
+  int firstBoxHeight;
+  int firstBoxLength;
+
+  int secondBoxWidth;
+  int secondBoxHeight;
+  int secondBoxLength;
+  
+  std::cout << "Введите высоту первой коробки: ";
+  std::cin >> firstBoxHeight;
+  std::cout << "Введите ширину первой коробки: ";
+  std::cin >> firstBoxWidth;
+  std::cout << "Введите длину первой коробки: ";
+  std::cin >> firstBoxLength;
+  
+  std::cout << "А теперь отверстие!\n";
+  
+  std::cout << "Введите высоту второй коробки: ";
+  std::cin >> secondBoxHeight;
+  std::cout << "Введите ширину второй коробки: ";
+  std::cin >> secondBoxWidth;
+  std::cout << "Введите длинну второй коробки: ";
+  std::cin >> secondBoxLength;
+
+  if ( firstBoxWidth <= secondBoxWidth && firstBoxHeight <= secondBoxHeight && firstBoxLength <= secondBoxLength){
+    std::cout << "Первая коробка влезет во вторую коробку!";
+  }
+    else if ( firstBoxWidth > secondBoxWidth && firstBoxHeight > secondBoxHeight && firstBoxLength > secondBoxLength) {
+      std::cout << "Первая коробка не влезет во вторую коробку.";
+      }
+}
