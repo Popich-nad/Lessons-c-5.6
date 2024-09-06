@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+
+int day;
+  std::cout << "--------Календарь мая--------\n";
+  std::cout << "      Введите число дня: ";
+  std::cin >> day;
+  if (day < 1 || day > 31)
+    std::cout << "Error";
+    else if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5 || day == 8 || day == 9 || day <= 10 || day == 13 || day == 14 || day == 20 || day == 21 || day == 27 || day == 28)
+    std::cout << "      Выходной день!";
+  else if (!(day == 1 || day == 2 || day == 3 || day == 4 || day == 5 || day == 8 || day == 9 || day <= 10 || day == 13 || day == 14 || day == 20 || day == 21 || day == 27 || day == 28))
+    std::cout << "      Рабочий день!";
+}
