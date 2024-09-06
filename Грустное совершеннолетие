@@ -1,0 +1,35 @@
+#include <iostream>
+
+int main(){
+  int birthYear;
+  int birthMonth;
+  int birthDay;
+
+  int currentYear;
+  int currentMonth;
+  int currentDay;
+
+  std::cout << "---------------Грустное совершеннолетие---------------\n";
+  std::cout << "\n";
+  std::cout << "Введите возраст клиента (год, месяц, день) ";
+  std::cin >> birthYear >> birthMonth >> birthDay;
+  std::cout << "Введите сегодняшнюю дату (год, месяц, день) ";
+  std::cin >> currentYear >> currentMonth >> currentDay;
+
+  int age = currentYear - birthYear;
+
+  if(age < 18){
+    std::cout << "Клиенту нельзя продать пиво.";
+  } else if (age > 18){
+    std::cout << "Клиенту можно продать пиво.";
+  }
+
+  if(birthMonth > 12 && birthDay >= 31 && birthYear > 2024){
+    std::cout << "Некорректная дата";
+  }
+
+  if(birthDay == currentDay && birthMonth <= currentMonth && birthYear < currentYear){
+    std::cout << "Клиенту можно продать пиво на следующий день.";
+  }
+  
+}
